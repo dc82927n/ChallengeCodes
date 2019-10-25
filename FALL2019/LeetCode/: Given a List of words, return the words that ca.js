@@ -9,7 +9,8 @@ var findWords = function (words) {
   let result = [];
   words.forEach(word => {
     let wordArray = word.toLowerCase().split("");
-    
+    console.log(wordArray)
+
     rows.forEach(row => {
       let ticks = 0;
       wordArray.forEach(letter => {
@@ -25,7 +26,7 @@ var findWords = function (words) {
 
 findWords(["Hello", "Alaska", "Dad", "Peace"]);
 
-//////
+//
 
 
 
