@@ -42,6 +42,7 @@ var balancedStringSplit = function(s) {
 	// can loop the the string 
 	// possible set up a counter that count r and l 
 	// which will see if it seen r or l yet
+	// and return the count result. 
 		let sum = 0; 
 	 	let result = 0; 
 
@@ -50,15 +51,16 @@ var balancedStringSplit = function(s) {
 		// is to iterate throw the string
 		// let keep track of r count 
 		if (s[i] === "R"){
-			sum++
+			sum++ //1 0 R1 -1-1-1+1+1+1 r2
 		} 
 		if(s[i] === "L"){
 			sum--
 		}
-		if (sum === 0) result++
-	}
+		if (sum === 0){ 
+			result++
+		}
 
-	console.log(result)
+		return result 
     
 };
 
