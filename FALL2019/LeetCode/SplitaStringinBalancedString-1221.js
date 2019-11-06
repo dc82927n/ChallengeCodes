@@ -60,8 +60,8 @@ var balancedStringSplit = function(s) {
 			result++
 		}
 
-		return result 
-    
+		console.log(result) 
+    }
 };
 
 
