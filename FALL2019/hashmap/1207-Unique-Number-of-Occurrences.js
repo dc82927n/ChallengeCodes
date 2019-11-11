@@ -27,18 +27,22 @@ Output: true
 
 
 var uniqueOccurrences = function(arr) {
-  	var numNegArr; 
-
-   for (var i = 0; i < arr.length; i++){
-   		arr[i] = Math.abs(arr[i]) 
-   		console.log(arr)
-   }
-
+    var map = new Map();
+    for (var num of arr) {
+        map.set(num, (map.get(num) || 0) + 1);
+    }
+    
+    var set = new Set();
+    for (var count of map.values()) {
+        if (set.has(count)) {
+            return false;
+        } else {
+            set.add(count);
+        }
+    }
+    
+    return true;
 };
-
-uniqueOccurrences([-1, 2, -5])
-
-
 
 
 

@@ -28,10 +28,12 @@ Output: true
 
 var uniqueOccurrences = function(arr) {
   	var numNegArr; 
+  	var seen = 1234567890 
+  	count 
 
    for (var i = 0; i < arr.length; i++){
    		arr[i] = Math.abs(arr[i]) 
-   		console.log(arr)
+   		
    }
 
 };
