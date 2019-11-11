@@ -27,6 +27,7 @@ Output: true
 
 
 var uniqueOccurrences = function(arr) {
+	
     var map = new Map();
     for (var num of arr) {
         map.set(num, (map.get(num) || 0) + 1);
