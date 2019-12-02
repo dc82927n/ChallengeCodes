@@ -52,7 +52,7 @@ const heightChecker = function(heights) {
 			}	
 
 	}
-	console.log(count)
+	return count
 };
 
 /*var heightChecker = heights => {
