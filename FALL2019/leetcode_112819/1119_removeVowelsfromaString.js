@@ -16,7 +16,7 @@ Output: ""
 var removeVowels = function(S) {
 
 	res = S.replace(/a|e|i|o|u/g, "")
-	return res
+	console.log(res)
     
 };
 
